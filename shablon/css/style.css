@@ -185,8 +185,11 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 50px;
     background: var(--section-bg-color);
+
+    flex-wrap: wrap;
+    row-gap: 20px;
 }
 
 .heading {
@@ -208,6 +211,11 @@ span {
     margin: 2rem 0 3rem;
 }
 
+.services {
+    border: 1px solid red;
+    padding: 12rem 9% ;
+}
+
 .services h2 {
     margin-bottom: 5rem;
 }
@@ -218,6 +226,8 @@ span {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
+
+    border: 1px solid green;
 }
 
 .servicion-container .services-box {
@@ -509,7 +519,7 @@ span {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 420px) {
     html {
         font-size: 50%;
     }
@@ -517,9 +527,18 @@ span {
     .contact form .input-box input {
         width: 100%;
     }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
 }
 
-@media (max-width: 365px) {
+@media (max-width: 375px) {
     .home-img img {
         width: 90vw;
     }
