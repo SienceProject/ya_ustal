@@ -10,6 +10,7 @@
    </head>
    <body>
       <div class="login">
+         {% csrf_token %}
          <img src="./img/login-bg.jpg" alt="login image" class="login__img">
 
          <form action="" class="login__form">
@@ -21,7 +22,8 @@
 
                   <div class="login__box-input">
                      <input type="email" required class="login__input" placeholder=" ">
-                     <label for="" class="login__label">Email</label>
+                     <label class="login__label">Username</label>
+                     <input type="text" name="username" class="login__input">
                   </div>
                </div>
 
