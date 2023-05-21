@@ -6,19 +6,19 @@
 
 {% block content %}
 <div class="p-10 lg:p-20 text-center">
-  <h1 class="text-3xl lg:text-6xl text-white">Вход</h1>
+  <h1 class="text-3xl lg:text-6xl text-black">Вход</h1>
 </div>
 
 <form method="post" action="." class="lg:w-1/4 px-4 mx-auto">
   {% csrf_token %}
 
   <div class="mb-5">
-    <label class="text-white">Username</label>
+    <label class="text-black">Username</label>
     <input type="text" name="username" class="w-full mt-2 px-4 py-2 rounded-xl">
   </div>
 
   <div class="mb-5">
-    <label class="text-white">Password</label>
+    <label class="text-black">Password</label>
     <input type="password" name="password" class="w-full mt-2 px-4 py-2 rounded-xl">
   </div>
 
@@ -32,6 +32,6 @@
     {% endfor %}
   {% endif %}
   
-  <button class="px-5 py-3 rounded-xl text-white bg-teal-800 hover:bg-teal-700">Login</button>
+  <button class="px-5 py-3 rounded-xl text-white bg-purple-300 hover:bg-green-800">Войти</button>
 </form>
 {% endblock %}
