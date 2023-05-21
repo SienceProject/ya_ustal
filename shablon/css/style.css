@@ -212,7 +212,6 @@ span {
 }
 
 .services {
-    border: 1px solid red;
     padding: 12rem 9% ;
 }
 
@@ -226,8 +225,6 @@ span {
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-
-    border: 1px solid green;
 }
 
 .servicion-container .services-box {
